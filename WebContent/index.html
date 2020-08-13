@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Shopping List</title>
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<h1>Welcome to Our GrandCircus Grocery Store</h1>
+<h3>Please Choose items from the list.</h3>
+<table>
+<tr>
+<th></th>
+<th>Product</th>
+<th>Description</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Add To Cart</th>
+</tr>
+<tr>
+<td><img src="pics/milk.jpg"/></td>
+<td>Milk</td>
+<td>Cow Milk with Vitamin D</td>
+<td>1.99</td>
+<td><input class="num" id="q1" type="number" value="0" min="0"/></td>
+<td><input id="id1" type="Button" value="Add To Cart" onclick="addToCart('Milk',1.99); addQuan1();"/></td>
+</tr>
+<tr>
+<td><img src="pics/bread.png"/></td>
+<td>Bread</td>
+<td>Wheat bread made of flour</td>
+<td>1.50</td>
+<td><input class="num" id="q2" type="number" value="0" min="0"/></td>
+<td><input id="id2" type="Button" value="Add To Cart" onclick="addToCart('Bread',1.50); addQuan2();"/></td>
+</tr>
+<tr>
+<td><img src="pics/apple.jpg"/></td>
+<td>Apples</td>
+<td>Bag of Gala Apples</td>
+<td>3.99</td>
+<td><input class="num" id="q3" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Apples',3.99); addQuan3();"/></td>
+</tr>
+<tr>
+<td><img src="pics/download.jpg"/></td>
+<td>Banana</td>
+<td>Pack of 6 bananas</td>
+<td>2.00</td>
+<td><input class="num"  id="q4" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Banana',2.00); addQuan4();"/></td>
+</tr>
+<tr>
+<td><img src="pics/butter.jpg"/></td>
+<td>Butter</td>
+<td>Made of milk</td>
+<td>2.99</td>
+<td><input class="num" id="q5" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Butter',2.99); addQuan5();"/></td>
+</tr>
+<tr>
+<td><img src="pics/cheese.png"/></td>
+<td>Cheese</td>
+<td>Fresh Mozzarella cheese</td>
+<td>4.99</td>
+<td><input class="num" id="q6" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Cheese',4.99); addQuan6();"/></td>
+</tr>
+<tr>
+<td><img src="pics/carrot.jpg"/></td>
+<td>Carrots</td>
+<td>3lbs bag ofCarrots</td>
+<td>3.99</td>
+<td><input class="num" id="q7" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Carrots',3.99); addQuan7();"/></td>
+</tr>
+<tr>
+<td><img src="pics/potato.jpg"/></td>
+<td>Potato</td>
+<td>5lbs bag of potato</td>
+<td>4.99</td>
+<td><input class="num" id="q8" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Potato',4.99); addQuan8();"/></td>
+</tr>
+<tr>
+<td><img src="pics/onion.jpg"/></td>
+<td>Onion</td>
+<td>2lbs bag of onions</td>
+<td>3.99</td>
+<td><input class="num" id="q9" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Onion',3.99); addQuan9();"/></td>
+</tr>
+<tr>
+<td><img src="pics/watermelon.jpg"/></td>
+<td>Watermelon</td>
+<td>Seedless giant watermelon</td>
+<td>6.99</td>
+<td><input class="num" id="q10" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Watermelon',6.99); addQuan10();"/></td>
+</tr>
+<tr>
+<td><img src="pics/cherries.jpg"/></td>
+<td>Cherries</td>
+<td>2lbs bag of fresh cherries</td>
+<td>2.99</td>
+<td><input class="num" id="q11" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Cherries',2.99); addQuan11();"/></td>
+</tr>
+<tr>
+<td><img src="pics/coke.jpg"/></td>
+<td>Coke</td>
+<td>1 lt. bottle of coke</td>
+<td>2.99</td>
+<td><input class="num" id="q12" type="number" value="0" min="0"/></td>
+<td><input type="Button" value="Add To Cart" onclick="addToCart('Coke',2.99); addQuan12();"/></td>
+</tr>
+</table>
+
+<input id="print" type="Button" value="Checkout" onclick="printCart()"/>
+<p id="checkout"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
